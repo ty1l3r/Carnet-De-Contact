@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from "./component/Header";
 import List from "./component/List";
+import Contenu from "./component/Contenu";
 
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
             <div className="App">
                 <Header/>
                 <div className='container mt-2'>
+                    <Contenu/>
                     <List/>
                 </div>
             </div>

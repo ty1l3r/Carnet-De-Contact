@@ -37,7 +37,7 @@ class List extends Component {
 
     render() {
         return (
-            <div>
+            <React.Fragment>
                 {this.state.contacts.map(contact => (
                     <Contact
                         key={contact.id}
@@ -47,7 +47,7 @@ class List extends Component {
                         supprimeClick={() => this.supprime(contact.id)}
                     />
                 ))}
-            </div>
+            </React.Fragment>
         );
     }
 }
