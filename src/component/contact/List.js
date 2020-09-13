@@ -4,6 +4,11 @@ import {Consumer} from '../../context'
 
 export default class List extends Component {
 
+    componentDidMount() {
+        console.log('componentdidmount');
+    }
+
+
     render() {
 
         return (

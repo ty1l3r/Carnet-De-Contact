@@ -3,6 +3,11 @@ import {Consumer} from '../../context'
 
 export default class Contact extends Component {
 
+    /*Test du cycle de vie Update*/
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log('MAJ OK ')
+    }
+
     state = {
         show: false
     }
