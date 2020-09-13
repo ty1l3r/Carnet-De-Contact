@@ -25,11 +25,13 @@ class AddContact extends Component {
 
         dispatch({type: 'ADD_CONTACT', payload: newContact})
 
+        this.props.history.push('/')
+
         /* metre le champ à 0 */
         this.setState({
-            nom:'',
-            email:'',
-            tel:''
+            nom: '',
+            email: '',
+            tel: ''
         })
     }
 
